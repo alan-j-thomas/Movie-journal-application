@@ -1,0 +1,142 @@
+.watchlist-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #242424;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.watchlist-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.watchlist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  background-color: rgb(251, 242, 231);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.watchlist-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.watchlist-item img {
+  width: 130px;
+  height: 190px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.watchlist-details {
+  flex-grow: 1;
+}
+
+.watchlist-details h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #000000;
+}
+
+.watchlist-details p {
+  margin: 0.4rem 0;
+  color: #000000;
+  font-size: 0.95rem;
+}
+
+.watchlist-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.watchlist-actions button {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #000000;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  box-shadow: 12px 12px 30px 1px rgba(0, 0, 0, 0.3);
+}
+
+.watchlist-actions button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.add-btn {
+  margin-bottom: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #646cffaa;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.watchlist-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #2e2e2e;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+.watchlist-form input,
+.watchlist-form select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: #3c3c3c;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.watchlist-form input:focus,
+.watchlist-form select:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.4);
+}
+
+.watchlist-form button[type="submit"] {
+  background-color: #646cffaa;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.watchlist-form button[type="submit"]:hover {
+  background-color: #646cffaa;
+}
+
+.watchlist-form select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
